@@ -1,0 +1,97 @@
+
+image {
+  width: 100%;
+}
+.wx-swiper-dot {
+  width: 36rpx!important;
+  height: 8rpx!important;
+  border-radius: 0!important;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx 0;
+  background: #fafafa;
+}
+.content view {
+  width: 22%;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.content text {
+  margin-top: 3px;
+  display: block;
+  color: #666;
+  font-size: 12px;
+}
+.iconfont {
+  padding: 9px 10px 8px 10px;
+  font-size: 30px;
+  border-radius: 100%;
+  background: #CD7054;
+  color: #FFFAFA;
+  display: inline-block;
+}
+.icon-ditu {
+  background: #8EE5EE;
+}
+.icon-emoji {
+  background: #BFEFFF;
+}
+.icon-iconfontphone {
+  background: #DEB887;
+}
+.icon-saoyisao {
+  background: #CD96CD;
+}
+.icon-luxiangji {
+  background: #09bb07;
+}
+.icon-camera {
+  background: #EEE685;
+}
+.icon-sousuo {
+  background: #E5E5E5;
+}
+
+#phone {
+  width: 80%;
+  height: 34%;
+  background: #fff;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  z-index: 999;
+  color: #666;
+  border-radius: 4px;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#phone input {
+  border: 1px solid #dfdfdf;
+  height: 26%;
+  border-radius: 4px;
+  margin: 5% 0;
+}
+#phone button {
+  width: 100%;
+}
+#mask {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.box-image {
+  padding: 30rpx;
+  box-sizing: border-box;
+}

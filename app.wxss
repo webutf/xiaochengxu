@@ -1,0 +1,84 @@
+@import './assets/font/iconfont.wxss';
+
+/*loading图代码*/
+.components-loading {
+  line-height: 80rpx;
+  text-align: center;
+  background: #efefef;
+}
+.components-loading image {
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle; 
+}
+.components-loading text {
+  padding-left: 20rpx;
+  height: 80rpx;
+  color: #09bb07;
+}
+
+/*无结果图代码*/
+page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.components-noResult {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 999;
+  top: 100rpx;
+  left: 0;
+  text-align: center;
+  padding-top: 40%;
+}
+.components-noResult image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.clearfix:after {
+  display: block;
+  content: '';
+  overflow: hidden;
+  clear: both;
+  height: 0;
+}
+
+.scroll-top {
+  width: 110rpx;
+  height: 110rpx;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  text-align: center;
+  position: fixed;
+  top: 70%;
+  right: 20rpx;
+  z-index: 9999;
+  opacity: 0.8;
+  overflow: hidden;
+}
+.scroll-top image {
+  width: 100%;
+  height: 100%;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.border-none {
+  border: none!important;
+}
+.margin0 {
+  margin: 0!important;
+}

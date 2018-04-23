@@ -1,0 +1,28 @@
+<view class="title">手机信息查询</view>
+<view>手机型号model: {{mobile.model}}</view>
+<view>手机像素比pixelRatio: {{mobile.pixelRatio}}</view>
+<view>手机系统版本: {{mobile.system}}</view>
+<view>屏幕宽度: {{mobile.screenWidth}}px</view>
+<view>屏幕高度: {{mobile.screenHeight}}px</view>
+<view>可使用窗口宽度: {{mobile.windowWidth}}px</view>
+<view>可使用窗口高度: {{mobile.windowHeight}}px</view>
+
+
+<view class="title">网址pr查询</view>
+<view class="search">
+  <input type="text" value="{{searchPr}}" placeholder="webnian.com" maxlength="30" bindinput="inputSearchPr"/>
+  <button type="primary" size="mini" bindtap="btnSearchPr">查询</button> 
+</view>
+<view class="pr" hidden="{{!pr}}">pr值:{{pr}}</view>
+
+
+<view class="title">身份证信息查询</view>
+<view class="search">
+  <input type="idcard" placeholder="身份证号" value="{{idNum}}" maxlength="18" bindinput="inputSearchId"/>
+  <button type="primary" size="mini" bindtap="searchId">查询</button> 
+</view>
+<view class="id-info">
+  <view>住址: {{idInfo.address}}</view>
+  <view>生日: {{idInfo.birthday}}</view>
+  <view>性别: {{idInfo.sex == 'M' ? '男' : idInfo.sex == 'F' ? '女' : ''}}</view>
+</view>

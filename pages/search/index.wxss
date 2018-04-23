@@ -1,0 +1,55 @@
+
+page {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.title {
+  color: #09bb07;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.search {
+  display: flex;
+  margin: 10px 0;
+}
+.search input {
+  border: 1rpx solid #dfdfdf;
+  flex: 1;
+  padding-left: 20rpx;
+  height: 36px;
+  border-radius: 3px;
+  margin-right: 20rpx;
+}
+.search button {
+  line-height: 36px;
+}
+
+#weather {
+  display: flex;
+  margin: 10px 0;
+}
+.content1 {
+  flex: 1;
+  border: 1rpx solid #1c7ab0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(#88a9ca,#bcd3e3);
+}
+.content1:nth-child(2) {
+  margin: 0 5px;
+}
+.content1 image {
+  width: 90%;
+  height: 60px!important;
+  display:  inline-block;
+}
+.pr {
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.id-info {
+  margin-bottom: 30px;
+}

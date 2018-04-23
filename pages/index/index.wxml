@@ -1,0 +1,59 @@
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-active-color="{{activeColor}}">
+  <block wx:for="{{flashUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="content">
+  <view>
+    <navigator url="../joke/index" hover-class="none" open-type="switchTab">
+      <span class="iconfont icon-emoji"></span><text>笑话</text>
+    </navigator>
+  </view> 
+  <view>
+    <navigator url="../yule/index" hover-class="none" open-type="switchTab">
+      <span class="iconfont icon-customerservice_fill"></span><text>娱乐</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="./map/index" hover-class="none">
+      <span class="iconfont icon-ditu"></span><text>地图</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="../search/index" hover-class="none" open-type="switchTab">
+      <span class="iconfont icon-sousuo"></span><text>搜索</text>
+    </navigator>
+  </view>
+  <view data-num="0" bindtap="navigator">
+    <span class="iconfont icon-iconfontphone"></span><text>打电话</text>
+  </view>
+  <view data-num="1" bindtap="navigator">
+    <span class="iconfont icon-saoyisao"></span><text>扫码</text>
+  </view>
+  <view>
+    <navigator url="./camera/index" hover-class="none">
+      <span class="iconfont icon-camera"></span><text>照相机</text>
+    </navigator>
+  </view>
+  <view >
+    <navigator url="./soundRecording/index" hover-class="none">
+      <span class="iconfont icon-luxiangji"></span><text>录音</text>
+    </navigator>
+  </view>
+</view> 
+
+<view id="phone" wx:if="{{showPhone}}">
+  <view class="desc">请在下方输入电话号码</view>
+  <input type="number" name="input" bindinput="bindInput" placeholder="10010" maxlength="11" confirm-type="done"/>
+  <button type="primary" bindtap="makePhoneCall" disabled="{{disabled}}">拨打</button>
+</view>
+<view id="mask" wx:if="{{showMask}}" bindtap="hideMask"></view>
+
+<view class="box-image">
+  <image src="../../assets/img/240282.png" mode="widthFix"></image>
+</view>

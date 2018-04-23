@@ -1,0 +1,19 @@
+
+<view class="section section_gap content">
+  <text>设置屏幕亮度</text>
+  <view class="body-view">
+    <slider value="{{sliderValue}}" bindchange="sliderChange" show-value/>
+  </view>
+</view>
+
+<button class="content" type="primary"  bindtap="primary"> 点击震动 </button>
+
+<view>联系码号: 10010</view>
+<button class="content" type="primary"  bindtap="addContract"> 添加到手机联系人 </button>
+
+<view>清理本地数据缓存</view>
+<button class="content" type="primary"  bindtap="clearStorage"> 清理本地数据缓存 </button>
+
+<view>联系方式</view>
+<view>官网: www.webnian.com</view>
+<view>qq: 919882905</view>

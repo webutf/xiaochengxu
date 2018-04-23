@@ -1,0 +1,40 @@
+<import src="../../components/index.wxml" />
+
+<scroll-view scroll-x="{{true}}" class="menubar">
+  <view class="menu clearfix">
+    <text wx:for="{{category}}" wx:key="{{$index}}" class="{{currentTab==item.id?'active':''}}" bindtap="toggle" data-id="{{item.id}}">{{item.name}}</text>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y="{{true}}" hidden="{{currentTab != 0}}" class="content clearfix" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" bindscrolltolower="bindscrolltolower" >
+  <view wx:for="{{textList}}" wx:key="{{$index}}">
+    <view class="text-list-title">{{item.title}}</view>
+    <view>{{item.text}}</view>
+    <view class="text-list-time">{{item.ct}}</view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y="{{true}}" hidden="{{currentTab != 1}}" class="content clearfix" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" bindscrolltolower="bindscrolltolower" >
+  <view wx:for="{{currentTab == 1 ? imageList : gifList}}" wx:key="{{$index}}">
+    <view class="text-list-title">{{item.title}}</view>
+    <image class="image-list-img" src="{{item.img}}" mode="widthFix"></image>
+    <view class="text-list-time">{{item.ct}}</view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y="{{true}}" hidden="{{currentTab != 2}}" class="content clearfix" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" bindscrolltolower="bindscrolltolower" >
+  <view wx:for="{{currentTab == 1 ? imageList : gifList}}" wx:key="{{$index}}">
+    <view class="text-list-title">{{item.title}}</view>
+    <image class="image-list-img" src="{{item.img}}" mode="widthFix"></image>
+    <view class="text-list-time">{{item.ct}}</view>
+  </view>
+</scroll-view>
+    
+<template is="loading"  data="{{...loading}}"/>
+
+<template is="noResult" data="{{...toggleResult}}" />
+  
+<view class="scroll-top" bindtap="refresh">
+    <image src='../../assets/img/refresh.jpg'></image> 
+</view>
+  

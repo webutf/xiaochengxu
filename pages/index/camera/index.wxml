@@ -1,0 +1,36 @@
+
+
+<view class="box">
+  <view class="content">
+    <view>图片来源: </view>
+    <picker mode="selector" value="{{sourceTypeIndex}}" range="{{sourceType}}" data-id="1" bindchange="bindChange">
+        <view class="picker">{{sourceType[sourceTypeIndex]}}</view>
+    </picker>
+  </view>
+
+  <view class="content">
+    <view>图片质量: </view>
+    <picker mode="selector" value="{{sizeTypeIndex}}" range="{{sizeType}}" data-id="2" bindchange="bindChange">
+        <view class="picker">{{sizeType[sizeTypeIndex]}}</view>
+    </picker>
+  </view>
+
+  <view class="content border-none">
+    <view>数量限制: </view>
+    <picker mode="selector" value="{{countIndex}}" range="{{count}}" data-id="3" bindchange="bindChange">
+        <view class="picker">{{count[countIndex]}}</view>
+    </picker>
+  </view>
+</view>
+
+<view class="box margin0">
+  <view class="content img-title-content border-none">
+    <view>点击可预览选择的图片</view>
+    <view>{{imageList.length}}/{{count[countIndex]}}</view>
+  </view>
+
+  <view class="choose-img">
+    <image wx:for="{{imageList}}" wx:key="{{$index}}" src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    <view bindtap="chooseImage"><span class="iconfont icon-add"></span></view>
+  </view>
+</view>

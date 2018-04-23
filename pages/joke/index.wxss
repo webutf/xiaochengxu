@@ -1,0 +1,50 @@
+.menubar{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  background: #f4f5f6;
+  position: fixed;
+  left:0;
+  z-index: 99;
+  top:0;
+  white-space: nowrap;
+}
+.menu{
+  white-space: nowrap;
+  height: 100rpx;
+  box-sizing: border-box;
+  line-height: 100rpx;
+  background: #f4f5f6;
+}
+.menu text{
+  display: inline-block;
+  font-size: 30rpx;
+  height: 100%;
+  padding: 0 100rpx;
+  text-align: center;
+}
+.menu text.active{
+  color:#09bb07;
+}
+
+.content{
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 100rpx 30rpx 0 30rpx;
+}
+.text-list-title {
+  color: #09bb07;
+  margin: 5px 0;
+}
+.text-list-time {
+  color: #FF8C69;
+  font-size: 18px;
+  margin: 5px 0 20px 0;
+}
+.image-list-img {
+  width: 100%;
+  display: inline-block;
+}
+
+
+

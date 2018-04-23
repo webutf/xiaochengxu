@@ -1,0 +1,14 @@
+
+<template name="loading">
+  <view class="components-loading clearfix" wx:if="{{showLoading}}">
+    <image src="{{url}}" ></image>
+    <text>加载中...</text>
+  </view>
+</template>
+
+<template name="noResult">
+  <view class="components-noResult" wx:if="{{showNoResult}}">
+    <image src="{{url}}"></image>
+    <view>{{text}}</view>
+  </view>
+</template>

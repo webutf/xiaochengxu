@@ -1,0 +1,12 @@
+
+page {
+  padding: 30rpx;
+}
+.content {
+  margin-bottom: 30px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

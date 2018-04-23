@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/settings/index",
+    "pages/joke/index",
+    "pages/index/camera/index",
+    "pages/index/soundRecording/index",
+    "pages/index/map/index",
+    "pages/yule/index",
+    "pages/search/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#09bb07",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/img/home-outline.png",
+        "selectedIconPath": "assets/img/home-selected.png"
+      },
+      {
+        "pagePath": "pages/joke/index",
+        "text": "笑话",
+        "iconPath": "assets/img/zixun-outline.png",
+        "selectedIconPath": "assets/img/zixun-selected.png"
+      },
+      {
+        "pagePath": "pages/yule/index",
+        "text": "娱乐",
+        "iconPath": "assets/img/index.png",
+        "selectedIconPath": "assets/img/index_active.png"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "搜索",
+        "iconPath": "assets/img/fanyi.png",
+        "selectedIconPath": "assets/img/fanyi_selected.png"
+      },
+      {
+        "pagePath": "pages/settings/index",
+        "text": "设置",
+        "iconPath": "assets/img/settings-outline.png",
+        "selectedIconPath": "assets/img/settings-selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 5000,
+    "downloadFile": 10000,
+    "uploadFile": 5000
+  },
+  "debug": true
+}
